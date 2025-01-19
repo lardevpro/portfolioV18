@@ -2,6 +2,8 @@
     text-align: center;
     background-color: rgb(185, 184, 184);
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
   }
   
   :host ::ng-deep .picsum-img-wrapper {
@@ -20,11 +22,16 @@
     width: 50%;
     height: 50%;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
+  .btn {
     margin-bottom: 20px;
-    color: rgb(105, 98, 98);
-}
+    background-color: royalblue;
+    color: white;
+  }
+
+  :hover.btn {
+    background-color: rgb(129, 129, 216);
+    transition: 0,5ms;
+  }

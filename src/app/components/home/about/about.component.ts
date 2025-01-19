@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { About } from '../models/about';
 
 
 @Component({
@@ -9,7 +10,6 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-
-  constructor() {  }
-
+  @Input() about!: About;
+  
 }

@@ -7,13 +7,14 @@ import { NavbarComponent } from "./navbar/navbar.component";
 import { EducationComponent } from "./education/education.component";
 import { EducationService } from './services/education.service';
 import { Education } from './models/education';
+import { ExperienceComponent } from "./experience/experience.component";
 
 
 
 
 @Component({
     selector: 'app-home',
-    imports: [CarouselComponent, AboutComponent, NavbarComponent, EducationComponent],
+    imports: [CarouselComponent, AboutComponent, NavbarComponent, EducationComponent, ExperienceComponent],
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
     standalone: true,

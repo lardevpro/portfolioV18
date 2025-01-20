@@ -1,21 +1,23 @@
-<h1>Certificados</h1>
+<section id="certificates">
 <div class="container">
+	<h1>Certificados</h1>
 	<ngb-carousel
 		#carousel
 		[interval]="3000"
 		[pauseOnHover]="pauseOnHover"
 		[pauseOnFocus]="pauseOnFocus"
+		[showNavigationIndicators]="false"
 		(slide)="onSlide($event)">
 		@for (image of images; track image; let i = $index) {
 			<ng-template ngbSlide>
 				<div class="carousel-caption">
 					<!-- <h3>My slide {{ i + 1 }} title</h3> -->
 				</div>
-				<a href="https://www.google.fr/?q=Number+{{ i + 1 }}" target="_blank" rel="nofollow noopener noreferrer">
+				<!-- <a href="https://www.google.fr/?q=Number+{{ i + 1 }}" target="_blank" rel="nofollow noopener noreferrer"> -->
 					<div class="picsum-img-wrapper">
 						<img class="image" [src]="image" alt="certificado {{ i + 1 }}" />
 					</div>
-				</a>
+				<!-- </a> -->
 			</ng-template>
 		}	
 	</ngb-carousel>
@@ -40,3 +42,4 @@
 		{{ paused ? 'Reanudar' : 'Pausar' }}
 	</button>
 </div>
+</section>

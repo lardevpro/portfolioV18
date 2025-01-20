@@ -25,7 +25,6 @@ export class CarouselComponent {
 		'assets/images/junit5.jpg',
 		'assets/images/primera_app_spring_boot.jpg',
 		'assets/images/publicar_playstore.jpg',
-		'assets/images/spring_angular.png',
 		'assets/images/spring_boot_angular.jpg',
 		'assets/images/spring_core_5.jpg',
 		'assets/images/spring_data_JPA.jpg',

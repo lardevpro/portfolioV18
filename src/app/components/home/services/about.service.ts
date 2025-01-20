@@ -6,17 +6,17 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class AboutService {
-  private aboutModel:About = new About();
+  private aboutModel!:About;
 
   constructor() { }
 
   getAboutModel$():Observable <About> {
     this.aboutModel = {
       titleSection: `Sobre Mi`,
-      welcome: `Bienvenido a mi Portfolio`,
-      presentation: `Hola, soy Juan, un apasionado de la programación y la tecnología,`,
+      welcome: `¡Bienvenido! ¡Gracias por vistar mi Portfolio!`,
+      presentation: `Mi nombre es Juan:`,
       imageUrl: `/assets/images/photo.png`,
-      description: `Titulado como técnico superior en desarrollo de 
+      description: `Técnico superior en desarrollo de 
       aplicaciones multiplataforma con experiencia en proyectos como OPPO 
       Community, utilizando Angular, y en trabajos internos con WordPress. 
       También he trabajado en la configuración personalizada de módulos en el 

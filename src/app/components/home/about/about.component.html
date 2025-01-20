@@ -1,10 +1,11 @@
-<h1>{{about.titleSection}}</h1>
-<div class="container">
-                <div class="col-md-4">
-                        <img [src]="about.imageUrl" class="img-fluid rounded-circle" alt="Foto de perfil">
-                    </div>
-                    <div class="description">
-                        <h2>{{about.welcome}}</h2>
+<h2>{{about.welcome}}</h2>
+<section id="about">
+    <div class="container">
+        <div class="col-md-4">
+            <img [src]="about.imageUrl" class="img-fluid rounded-circle" alt="Foto de perfil">
+        </div>
+        <div class="description">
+                        <h1>{{about.titleSection}}</h1>
                         <p>
                             {{about.presentation}}
                         </p>
@@ -16,3 +17,4 @@
                         </p>
                 </div>
             </div>
+        </section>

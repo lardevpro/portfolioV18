@@ -3,11 +3,11 @@ import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } fr
 import { FormsModule } from '@angular/forms';
 
 @Component({
-	selector: 'app-carousel',
+    selector: 'app-carousel',
+    templateUrl: './carousel.component.html',
+    styleUrl: './carousel.component.scss',
+    imports: [NgbCarouselModule, FormsModule],
 	standalone: true,
-	templateUrl: './carousel.component.html',
-	styleUrl: './carousel.component.scss',
-	imports: [NgbCarouselModule, FormsModule],
 })
 export class CarouselComponent {
 

@@ -3,11 +3,11 @@ import { About } from '../models/about';
 
 
 @Component({
-  selector: 'app-about',
-  standalone: true,
-  imports: [],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+    selector: 'app-about',
+    imports: [],
+    templateUrl: './about.component.html',
+    styleUrl: './about.component.scss',
+    standalone: true,
 })
 export class AboutComponent {
   @Input() about!: About;

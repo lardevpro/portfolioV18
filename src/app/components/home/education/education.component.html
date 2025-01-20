@@ -1,14 +1,14 @@
-
-<section id="education" class="education">
+<div class="container" id="education">
+    <section  class="education">
+    <h1>Formación</h1>
     @for (item of education; track $index) {
-        {{item.title}}
-        {{item.institute}}
-        {{item.date}}
-        {{item.description}}
+        <h3>{{item.title}}</h3>
+        <p>{{item.institute}}</p>
+        <p>{{item.date}}</p>
+        <p>{{item.description}}</p><br>
     } 
-    Agrega más elementos de formación según sea necesario 
 </section>
-
+</div>
 <!-- <mat-list>
     <mat-list-item>Item 1</mat-list-item>
     <mat-divider></mat-divider>

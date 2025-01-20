@@ -3,7 +3,6 @@ import { CarouselComponent } from "./carousel/carousel.component";
 import { AboutComponent } from "./about/about.component";
 import { AboutService } from './services/about.service';
 import { About } from './models/about';
-import { error } from 'console';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { EducationComponent } from "./education/education.component";
 import { EducationService } from './services/education.service';
@@ -13,11 +12,11 @@ import { Education } from './models/education';
 
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CarouselComponent, AboutComponent, NavbarComponent, EducationComponent],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+    selector: 'app-home',
+    imports: [CarouselComponent, AboutComponent, NavbarComponent, EducationComponent],
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
+    standalone: true,
 })
 export class HomeComponent implements OnInit {
 

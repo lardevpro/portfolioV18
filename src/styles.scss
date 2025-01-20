@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+@use 'bootstrap/scss/bootstrap' as *;
 body {
     background-image: url('assets/images/background.jpg');
     background-size: cover; 
@@ -33,7 +33,7 @@ h2 {
 }
 
 p, a {
-    color: rgb(216, 207, 207);
+    color: rgb(236, 233, 233);
     font-size: 20px;
     
 }

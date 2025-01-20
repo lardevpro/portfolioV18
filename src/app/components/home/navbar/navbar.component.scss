@@ -10,3 +10,8 @@
     gap: 20px; 
 }
 
+.container-fluid a:hover,
+.container-fluid a.active {
+    text-decoration: underline;
+    transition: 500ms;
+}

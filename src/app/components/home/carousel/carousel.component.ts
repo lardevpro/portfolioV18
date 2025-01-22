@@ -28,6 +28,10 @@ export class CarouselComponent {
     'assets/images/jekyll_github_pages.jpg'
   ];
 
+  urls = [
+    
+  ];
+
   onSlide(event: NgbSlideEvent) {
     if (event.paused && event.source === NgbSlideEventSource.INDICATOR) {
       this.carousel.cycle();

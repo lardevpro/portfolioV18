@@ -2,31 +2,41 @@ import { Component, OnInit } from '@angular/core';
 import { CarouselComponent } from "./carousel/carousel.component";
 import { AboutComponent } from "./about/about.component";
 import { AboutService } from './services/about.service';
-import { About } from './models/about';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { EducationComponent } from "./education/education.component";
 import { EducationService } from './services/education.service';
-import { Education } from './models/education';
 import { ExperienceComponent } from "./experience/experience.component";
+import { ExperienceService } from './services/experience.service';
+
+
 
 
 
 
 @Component({
     selector: 'app-home',
-    imports: [CarouselComponent, AboutComponent, NavbarComponent, EducationComponent, ExperienceComponent],
+    imports: [CarouselComponent,
+    AboutComponent,
+    NavbarComponent,
+    EducationComponent,
+    ExperienceComponent],
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
     standalone: true,
 })
 export class HomeComponent implements OnInit {
 
-  aboutModel!: About;
-  educationModel!:Education[];
+  aboutModel!: any;
+  educationModel!:any[];
+  experienceModel!:any[];
 
-  constructor(private aboutService: AboutService,
+  constructor(
+              private aboutService: AboutService,
               private edicationService: EducationService,
+              private experienceService: ExperienceService,
   ) {}
+
+
 
 
   ngOnInit(): void {
@@ -39,7 +49,7 @@ export class HomeComponent implements OnInit {
         console.error(`Error al cargar About` + e)
       },
       complete: ()=> {
-        console.log(`About Cargado`)
+        console.log(`About Cargado --> `+this.aboutModel)
       }
     });
 
@@ -53,7 +63,20 @@ export class HomeComponent implements OnInit {
         console.error(`Error al cargar Education` + e);
       },
       complete: ()=> {
-        console.log(`Education Caragado`)
+        console.log(`Education Caragado --> `+this.educationModel)
+      }
+    });
+
+    //SECTION Experience
+    this.experienceService.getExperience$().subscribe({
+      next:n=> {
+        this.experienceModel = n
+      },
+      error:e=> {
+        console.error(`Error al cargar Experience` + e);
+      },
+      complete:()=> {
+        console.log(`Experience Cargado --> `+this.experienceModel)
       }
     });
   }

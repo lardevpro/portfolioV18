@@ -18,7 +18,7 @@ export class ExperienceService  {
       date: 'sep 2024 - actualidad',
       position: 'Asistente de Desarrollo de Software y Sistemas',
       description: `Apoyo en el desarrollo frontend de aplicaciones web 
-      usando Angular. Colaboración en la implementación y personalización de sistemas ERP.
+      usando Angular.Colaboración en la implementación y personalización de sistemas ERP.
       Maquetación y diseños de sitios web en WordPress.
       Resolución de incidencias técnicas y soporte en la documentación.`,
       technologies: ['Angular','Odoo','WordPress', 'Python','HTML', 'CSS', 
@@ -30,12 +30,12 @@ export class ExperienceService  {
       location: 'Riba Roja de Túria (Valencia)',
       date: '2015 - 2018',
       description: `Transporte de productos alimenticios en cisternas acondicionadas de gran 
-      tonelaje`,
+      tonelaje.`,
       technologies: ['Transporte', 'Logística', 
       'Conducción', 'Seguridad', 'Mantenimiento','Responsabilidad'],	
     },
   {
-    company: 'Repsol SL',
+    company: 'Repsol SA',
     logo: 'assets/images/repsol.png',
     position:'Encargado de Estación de Servicios',
     location: 'Ciudad Real (Ciudad Real)',

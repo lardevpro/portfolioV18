@@ -13,7 +13,7 @@ export class AboutService {
   getAboutModel$():Observable <About> {
     this.aboutModel = {
       titleSection: `Sobre Mi`,
-      welcome: `¡Bienvenido! ¡Gracias por vistar mi Portfolio!`,
+      welcome: `¡Bienvenido a Mi Portfolio!`,
       presentation: `Mi nombre es Juan:`,
       imageUrl: `/assets/images/photo.png`,
       description: `Técnico superior en desarrollo de 

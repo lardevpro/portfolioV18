@@ -1,7 +1,23 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
 /* You can add global styles to this file, and also import other style files */
 
-/* Importing Bootstrap SCSS file. */
-@use 'bootstrap/scss/bootstrap' as *;
+/* Importing Bootstrap CSS file. */
+
 body {
     background-image: url('assets/images/background.jpg');
     background-size: cover; 
@@ -12,29 +28,10 @@ body {
     height: 100vh;
     margin: 0; 
     padding: 0; 
-    font-family:'CanelaText-Light';;
+    font-family: 'CanelaText-Light';
 }
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: rgb(46, 43, 43);
-    text-decoration: underline;
-    padding: 50px;
+p {
+  font-size: 20px;
+  color: rgb(46, 43, 43);
 }
-h2 {
-    color: rgb(39, 37, 37);
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 20px;
-
-}
-
-p, a {
-    color: rgb(236, 233, 233);
-    font-size: 20px;
-    
-}
-

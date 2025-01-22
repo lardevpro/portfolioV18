@@ -1,55 +1,23 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        
-        <a class="navbar-brand" href="#about" >Sobre Mi</a>
-        <a class="navbar-brand" href="#education">Formación</a>
-        <a class="navbar-brand" href="#certificates">Certificados</a>
-        <a class="navbar-brand" href="#about">Experiencia Profesional</a>
-
-        <!-- <button
-            class="navbar-toggler"
-            type="button"
-            (click)="togglerSecondExample.toggle()"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <i class="fas fa-bars"></i>
-        </button> -->
-        <!-- <div
-        class="collapse navbar-collapse"
-        id="navbarTogglerDemo02"
-        mdbCollapse
-        #togglerSecondExample="mdbCollapse"
-        > -->
-            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Sobre Mi</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-                >Disabled</a
-                >
-            </li>
-            </ul> -->
-            <form class="d-flex input-group w-auto">
-            <input
-            type="search"
-            class="form-control"
-            placeholder="Buscar"
-            aria-label="Search"
-            />
-            <button
-                class="btn btn-outline-primary"
-                type="button"
-                data-mdb-ripple-color="dark"
-            >
-                Buscar
-            </button>
-            </form>
-        </div>
-    <!-- </div> -->
-    </nav>
+  <div class="container-fluid">
+    <img class="log" src="assets/images/log_dev.png" alt="logo">
+    <a class="navbar-brand" href="#">
+    LardevPro
+      <!-- Aquí puedes poner un icono de imagen (por ejemplo, con un archivo PNG) -->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" (click)="closeNavbar()">
+        <li class="nav-item" *ngFor="let item of navItems">
+          <a class="nav-link" [href]="'#' + item.link">{{ item.label }}</a>
+        </li>
+      </ul>
+      <form class="d-flex ms-auto" action="https://www.google.com/search" method="get" target="_blank">
+        <input class="form-control me-2" type="search" name="q" placeholder="Buscar en Google" aria-label="Buscar">
+        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>

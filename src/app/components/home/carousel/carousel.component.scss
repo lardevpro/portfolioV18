@@ -1,6 +1,6 @@
 .container {
     text-align: center;
-    background-color: rgb(185, 184, 184);
+    background-color: rgb(217, 215, 215);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
@@ -28,11 +28,11 @@
 
   .btn {
     margin-bottom: 20px;
-    background-color: royalblue;
+    background-color: rgb(99, 136, 245);
     color: white;
   }
 
   :hover.btn {
-    background-color: rgb(129, 129, 216);
+    background-color: rgb(72, 72, 255);
     transition: 0,5ms;
   }

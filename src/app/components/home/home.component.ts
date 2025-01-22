@@ -7,6 +7,7 @@ import { EducationComponent } from "./education/education.component";
 import { EducationService } from './services/education.service';
 import { ExperienceComponent } from "./experience/experience.component";
 import { ExperienceService } from './services/experience.service';
+import { ContactComponent } from "./contact/contact.component";
 
 
 
@@ -19,7 +20,7 @@ import { ExperienceService } from './services/experience.service';
     AboutComponent,
     NavbarComponent,
     EducationComponent,
-    ExperienceComponent],
+    ExperienceComponent, ContactComponent],
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
     standalone: true,

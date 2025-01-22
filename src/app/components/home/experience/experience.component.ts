@@ -8,11 +8,13 @@ import { CommonModule } from '@angular/common';
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss'
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent {
   @Input() experiences!:Experience[];
 
-  constructor() { } 
-  ngOnInit(): void {
-    console.log('LLega '+this.experiences);
+  splitDescription(description: string): string[] {
+    return description
+      .split('.')
+      .map(item => item.trim())  // Eliminamos los espacios en blanco al inicio y final
+      .filter(item => item.length > 0); // Eliminamos los elementos vacíos
   }
 }

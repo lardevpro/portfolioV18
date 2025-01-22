@@ -36,10 +36,6 @@ export class CarouselComponent {
 
   togglePaused() {
     this.paused = !this.paused;
-    if (this.paused) {
-      this.carousel.pause();
-    } else {
-      this.carousel.cycle();
-    }
+    this.paused ? this.carousel.pause() : this.carousel.cycle();
   }
 }

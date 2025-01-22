@@ -1,24 +1,20 @@
 <div class="container" id="experience">
-    <h1>Experiencia Laboral</h1>
-    @for(exp of experiences; track exp; let i = $index) {
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h4>{{exp.position}}</h4>
-                    </div>
-                    <div class="card-body">
-                        <p><strong>{{exp.company}}</strong> ({{exp.date}})</p>
-                        <p>{{exp.description}}</p>
-                        <ul>
-                            <ng-container *ngFor="let data of (exp.description ? exp.description.split('.') : []); let i = index">
-                                <li>{{data}}</li>
-                            </ng-container>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-    }
+  <h1>Experiencia Laboral</h1>
+  <div *ngFor="let exp of experiences; let i = index" class="experience-item">
+    <div class="card">
+      <div class="card-header">
+        <h4>{{ exp.position }}</h4>
+      </div>
+      <div class="card-body">
+        <p><strong>{{ exp.company }}</strong> ({{ exp.date }})</p>
+        <p>{{ exp.description }}</p>
+        <ul>
+          <!-- Filtramos los valores vacíos después de dividir por el punto -->
+          <ng-container *ngFor="let data of splitDescription(exp.description || '')">
+            <li>{{ data }}.</li>
+          </ng-container>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

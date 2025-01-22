@@ -1,38 +1,66 @@
 .container {
-    text-align: center;
-    background-color: rgb(217, 215, 215);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
-    opacity: 0.9;
-  }
-  
-  :host ::ng-deep .picsum-img-wrapper {
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out;
-    border-radius: 10px;
-  }
-  
-  .picsum-img-wrapper:hover {
-    transform: scale(1.05);
-  }
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 90%; // Ajuste para dispositivos pequeños
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
 
 .image {
-    margin-top: 20px;
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; // Límite máximo para pantallas grandes
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.02);
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #75b7fe;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #298df7;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .image {
+    max-width: 100%; // Ajusta al ancho de la pantalla
   }
 
   .btn {
-    margin-bottom: 20px;
-    background-color: rgb(99, 136, 245);
-    color: white;
+    font-size: 0.8rem;
+    padding: 6px 12px;
   }
-
-  :hover.btn {
-    background-color: rgb(72, 72, 255);
-    transition: 0,5ms;
-  }
+}

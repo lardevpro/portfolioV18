@@ -1,0 +1,31 @@
+<h1 id="contact">Contáctame</h1>
+<div class="social-networks">
+  <ul>
+    <li>
+      <a [href]="urlLinkedin" target="_blank" rel="noopener noreferrer" [title]="linkedinTooltip">
+        <img [src]="linkedinImage" alt="logo linkedin">
+      </a>
+    </li>
+    <li>
+      <a [href]="urlGithub" target="_blank" rel="noopener noreferrer" [title]="githubTooltip">
+        <img [src]="githubImage" alt="logo GitHub">
+      </a>
+    </li>
+    <li>
+      <a [href]="urlCurriculum" target="_blank" rel="noopener noreferrer" [title]="cvTooltip">
+        <img [src]="cvImage" alt="Curriculum Vitae Imagen">
+      </a>
+    </li>
+    <li>
+      <a [href]="urlMail" target="_blank" rel="noopener noreferrer" [title]="sendEmailTooltip">
+        <img [src]="mailImage" alt="logo email">
+      </a>
+    </li>
+    <li>
+      <button (click)="copyEmail()" class="copy-button" [title]="copyEmailTooltip">Copiar Email</button>
+    </li>
+  </ul>
+</div>
+<div class="rights">
+  <p>&copy; 2025 Juan Gabriel Lara</p>
+</div>

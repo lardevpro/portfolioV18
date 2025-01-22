@@ -1,25 +1,22 @@
 <section id="certificates">
 	<div class="container">
-	  <h1>Certificados</h1>
+	  <h1>Certificaciones</h1>
 	  <ngb-carousel
 		#carousel
 		[interval]="3000"
 		[pauseOnHover]="pauseOnHover"
 		[pauseOnFocus]="pauseOnFocus"
-		[showNavigationIndicators]="false"
+		[showNavigationIndicators]="true"
 		(slide)="onSlide($event)">
 		<ng-template ngbSlide *ngFor="let image of images; let i = index">
-		  <div class="carousel-caption">
-			<!-- <h3>My slide {{ i + 1 }} title</h3> -->
-		  </div>
-		  <div class="picsum-img-wrapper">
-			<img class="image" [src]="image" alt="certificado {{ i + 1 }}" />
+		  <div class="image-wrapper">
+			<img class="image" [src]="image" alt="Certificado {{ i + 1 }}" />
 		  </div>
 		</ng-template>
 	  </ngb-carousel>
-	  <hr />
-	  <button type="button" (click)="togglePaused()" class="btn btn-outline-secondary btn-sm">
+	  <button type="button" (click)="togglePaused()" class="btn">
 		{{ paused ? 'Reanudar' : 'Pausar' }}
 	  </button>
 	</div>
   </section>
+  

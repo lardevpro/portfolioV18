@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
   imports: [RouterModule ,CommonModule],
 })
 export class NavbarComponent {
+  // Control del estado del colapso de la navbar
   isNavbarCollapsed = true;
 
   // Navegación dinámica
@@ -21,14 +22,21 @@ export class NavbarComponent {
     { label: 'Contacto', link: 'contact' },
   ];
 
+  // Método para abrir o cerrar la navbar
+  toggleNavbar() {
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
+  }
+
+  // Método para cerrar la navbar cuando se hace clic en un enlace
   closeNavbar() {
     this.isNavbarCollapsed = true;
     const navbarNav = document.getElementById('navbarNav');
     if (navbarNav) {
-      navbarNav.classList.remove('show');
+      navbarNav.classList.remove('show');  // Cierra el menú si está abierto
     }
   }
 
+  // Detecta clics fuera de la barra de navegación para cerrarla
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: Event) {
     const target = event.target as HTMLElement;

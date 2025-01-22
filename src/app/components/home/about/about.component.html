@@ -1,16 +1,16 @@
-<section id="about"><br><br>
-  <h1 style="text-align: center; margin-bottom: 30px;">{{ about.welcome}}</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img [src]="about.imageUrl" class="img-fluid rounded-circle" alt="Foto de perfil">
-        </div>
-        <div class="col-md-8">
-          <h3>{{ about.titleSection }}</h3>
-          <p>{{ about.presentation}}</p>
-          <p>{{ about.description }}</p>
-          <p>{{ about.observation}}</p>
-        </div>
+<section id="about" class="about-section">
+  <h1 class="text-center">{{ about.welcome }}</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img [src]="about.imageUrl" class="img-fluid rounded-circle profile-image" alt="Foto de perfil">
+      </div>
+      <div class="col-md-8">
+        <h3>{{ about.titleSection }}</h3>
+        <p>{{ about.presentation }}</p>
+        <p>{{ about.description }}</p>
+        <p>{{ about.observation }}</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>

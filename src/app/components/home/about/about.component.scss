@@ -1,49 +1,91 @@
-/* filepath: /c:/Users/piedr/Desktop/portfolioV16/portfolioV18/src/app/components/home/about/about.component.scss */
-h2 {
-    margin-top: 50px;
-    text-align: center;
-  }
-  
+.about-section {
+  padding: 40px 20px;
+  background-color: rgb(217, 215, 215);
+  border-radius: 10px;
+  opacity: 0.9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(217, 215, 215);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  max-width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.col-md-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #202049;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
   .container {
-    background-color: rgb(217, 215, 215);
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 0.9;
   }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+  h1 {
+    font-size: 2rem;
   }
-  
-  .col-md-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .col-md-4 img {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    background-color: red;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .col-md-8 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
+
   h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
   }
-  
- 
+
+  p {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    max-width: 180px;
+  }
+}

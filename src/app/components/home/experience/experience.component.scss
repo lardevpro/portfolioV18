@@ -6,14 +6,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
-  h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-  }
-  
   .experience-item {
     margin-bottom: 30px;
     transition: transform 0.3s ease;
@@ -24,16 +16,14 @@
   }
   
   .card {
-    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(89, 89, 89, 0.1);
     opacity: 0.95;
   }
   
   .card-header {
-    background-color: #a4a4a4;
-    border: none;
+    background-color: #f3eded;
+    
     padding: 15px;
     border-radius: 10px 10px 0 0;
   }

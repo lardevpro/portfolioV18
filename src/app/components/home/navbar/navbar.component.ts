@@ -16,6 +16,7 @@ export class NavbarComponent {
   // Navegación dinámica
   navItems = [
     { label: 'Sobre Mi', link: '' },
+    { label: 'Proyectos', link: 'projects' },
     { label: 'Experiencia Profesional', link: 'experience' },
     { label: 'Formación', link: 'education' },
     { label: 'Certificados', link: 'certificates' },

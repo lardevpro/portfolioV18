@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { About } from '../models/about';
 
 
+
 @Component({
     selector: 'app-about',
     imports: [],

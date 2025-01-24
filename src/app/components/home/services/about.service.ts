@@ -21,7 +21,7 @@ export class AboutService {
       Community, utilizando Angular, y en trabajos internos con WordPress. 
       También he trabajado en la configuración personalizada de módulos en el 
       sistema ERP Odoo para Metalistería Madrid.`,
-      observation: `Aunque el sector está lleno de jóvenes talentosos, mi experiencia y 
+      observation: `Mi experiencia en el mundo laboral me ha dotado de 
       habilidades como constancia, compromiso, disciplina y toma de decisiones en 
       contextos exigentes me permiten marcar la diferencia y aportar valor a sus 
       proyectos.`

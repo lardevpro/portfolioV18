@@ -2,12 +2,17 @@ import { Component, Input, ViewChild } from '@angular/core';
 import { NgbCarousel, NgbCarouselModule, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ImageModule } from 'primeng/image';
+
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss'],
-  imports: [CommonModule, NgbCarouselModule, FormsModule],
+  imports: [CommonModule, 
+            NgbCarouselModule, 
+            FormsModule,
+            ImageModule],
   standalone: true,
 })
 export class CarouselComponent {

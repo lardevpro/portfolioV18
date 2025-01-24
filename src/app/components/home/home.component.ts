@@ -8,19 +8,19 @@ import { EducationService } from './services/education.service';
 import { ExperienceComponent } from "./experience/experience.component";
 import { ExperienceService } from './services/experience.service';
 import { ContactComponent } from "./contact/contact.component";
-
-
-
-
-
+import { ProjectsComponent } from "./projects/projects.component";
 
 @Component({
     selector: 'app-home',
-    imports: [CarouselComponent,
+    imports: [
+    CarouselComponent,
     AboutComponent,
     NavbarComponent,
     EducationComponent,
-    ExperienceComponent, ContactComponent],
+    ExperienceComponent,
+    ContactComponent, 
+    ProjectsComponent,
+  ],
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
     standalone: true,

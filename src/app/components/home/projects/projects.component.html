@@ -1,0 +1,37 @@
+<section class="card-proyect-container" id="projects">
+    <h1>Proyectos</h1><br><br><br>
+    <div class="projects-grid">
+      <p-card 
+        *ngFor="let project of projects" 
+        [style]="{ width: '25rem', overflow: 'hidden' }"
+      >
+        <ng-template #header>
+          <img [alt]="project.title" class="w-full" [src]="project.imageUrl" />
+        </ng-template>
+        <ng-template #title> {{ project.title }} </ng-template>
+        <ng-template #subtitle> {{ project.subtitle }} </ng-template>
+        <p>
+          {{ project.description }}
+        </p>
+        <ng-template #footer>
+          <div class="flex gap-4 mt-1">
+            <a 
+              [href]="project.gitHubUrl" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="social-networks"
+              [title]="'Ver en GitHub'"
+            >
+              <img [src]="githubImage" alt="logo GitHub" />
+            </a>
+            <p-button 
+              label="Visitar sitio" 
+              class="w-full" 
+              (onClick)="navigateToSite(project.websiteUrl)"
+            ></p-button>
+          </div>
+        </ng-template>
+      </p-card>
+    </div>
+  </section>
+  

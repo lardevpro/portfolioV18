@@ -24,7 +24,6 @@ export class ProjectsComponent {
         Gestiona datos temporalmente sin usar base de datos.
         El proyecto demuestra la interacción eficiente entre frontend y backend.
       `,
-      repoUrl: 'https://github.com/lardevpro/spring-angular',
       websiteUrl: 'https://api-angular-spring.web.app',
       imageUrl: 'assets/images/api_rest_img.jpeg',
       gitHubUrl: 'https://github.com/lardevpro/srping-angular',
@@ -33,13 +32,10 @@ export class ProjectsComponent {
     {
       title: 'Street Figther',
       subtitle: 'Java SE',
-      description: `
-        Desarrollé una aplicación que conecta un frontend Angular
-        con una API REST en Spring Boot mediante peticiones HTTP.
-        Gestiona datos temporalmente sin usar base de datos.
-        El proyecto demuestra la interacción eficiente entre frontend y backend.
+      description: `E este proyecto le tengo mucho cariño por que el juego de Street Figther es uno de mis favoritos.
+      fue creado en Java SE que y debido a su éxito, fue utilizado para promocionar
+      el curso del centro educativo (archivo .jar para descargar).
       `,
-      repoUrl: 'https://github.com/lardevpro/spring-angular',
       websiteUrl: '',
       imageUrl: 'assets/images/street_fighter_prject.jpg',
       gitHubUrl: 'https://github.com/lardevpro/Street-Figther',

@@ -24,11 +24,12 @@
             >
               <img [src]="githubImage" alt="logo GitHub" />
             </a>
-            <p-button 
+            <p-button *ngIf="project.websiteUrl !== ''"
               label="Visitar sitio" 
               class="w-full" 
               (onClick)="navigateToSite(project.websiteUrl)"
             ></p-button>
+              <button *ngIf="project.downloadUrl !== ''" (click)="downloadFile('assets/games/StreetFighter-0.0.1-SNAPSHOT.jar','street-figther-javaSE.jar')">Descargar Fichero</button>
           </div>
         </ng-template>
       </p-card>

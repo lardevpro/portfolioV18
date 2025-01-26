@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { ImageModule } from 'primeng/image';
 
 
+
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',

@@ -1,12 +1,20 @@
 <section id="about" class="about-section">
-  <h1 class="text-center">{{ about.welcome }}</h1>
-  <p-card [header]="about.titleSection">
-    <div class="col-md-8">
-      
-      <p-image [src]="about.imageUrl" alt="imagen perfil" width="250px" />
-      <p>{{ about.presentation }}</p>
-      <p>{{ about.description }}</p>
-      <p>{{ about.observation }}</p>
-    </div>
-  </p-card>
+  <div class="container">
+    <h1 class="text-center">{{ about.welcome }}</h1>
+    <p-card [header]="about.titleSection" class="about-card">
+      <div class="about-content">
+        <div class="image-container">
+          <!-- Usamos un div en lugar de p-image para controlar mejor los estilos -->
+          <div class="profile-image-wrapper">
+            <img [src]="about.imageUrl" alt="imagen perfil" class="profile-image"/>
+          </div>
+        </div>
+        <div class="text-content">
+          <p class="about-text">{{ about.presentation }}</p>
+          <p class="about-text">{{ about.description }}</p>
+          <p class="about-text">{{ about.observation }}</p>
+        </div>
+      </div>
+    </p-card>
+  </div>
 </section>

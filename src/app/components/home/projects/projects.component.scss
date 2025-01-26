@@ -3,11 +3,7 @@
   margin: 2rem 0;
   
   
-  h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 2rem;
-  }
+
 
   .projects-grid {
     display: flex;
@@ -17,13 +13,9 @@
   }
 }
 
-/* Estilo para las tarjetas */
-p-card {
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 25rem; /* Ajusta el ancho de las tarjetas */
 
+p-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
@@ -36,23 +28,18 @@ p-card {
 
   p {
     font-size: 0.95rem;
-    color: #555;
+    //color: #555;
     line-height: 1.5;
     padding: 0 1rem;
     text-align: justify;
   }
 
-  ::ng-deep .p-card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    color: #3d3c3c;
-  }
+ 
 
   ::ng-deep .p-card-subtitle {
     font-size: 1rem;
     text-align: center;
-    color: #666;
+    //color: #666;
     margin-bottom: 1rem;
   }
 
@@ -60,13 +47,13 @@ p-card {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    padding: 1rem 0;
+    padding: 8px;
     background-color: #e5e2e2;
     border-radius: 0 0 8px 8px;
   }
 }
 
-/* Estilo para enlaces sociales */
+
 .social-networks img {
   width: 4rem;
   height: 4rem;
@@ -82,12 +69,12 @@ p-card {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem; /* Ajusta el espacio entre los botones según sea necesario */
+  gap: 1rem; 
   margin-right: 4px;
   
 }
 
-/* Estilos responsivos */
+
 @media (max-width: 768px) {
   .projects-grid {
     justify-content: center;
@@ -95,23 +82,23 @@ p-card {
   }
 
   p-card {
-    width: 90%; /* Las tarjetas ocuparán casi todo el ancho disponible en dispositivos móviles */
-    margin: 1rem 0; /* Margen superior e inferior para separación */
+    width: 90%; 
+    margin: 1rem 0; 
   }
 
   h1 {
-    font-size: 1.8rem; /* Tamaño de fuente reducido para pantallas más pequeñas */
+    font-size: 1.8rem; 
   }
 
   ::ng-deep .p-card-title {
-    font-size: 1.1rem; /* Reducimos el tamaño del título en dispositivos móviles */
+    font-size: 1.1rem; 
   }
 
   ::ng-deep .p-card-subtitle {
-    font-size: 0.9rem; /* Reducimos el tamaño del subtítulo en dispositivos móviles */
+    font-size: 0.9rem; 
   }
 
   p-card p {
-    font-size: 0.85rem; /* Reducimos el tamaño del texto para mejorar la lectura en pantallas pequeñas */
+    font-size: 0.85rem; 
   }
 }

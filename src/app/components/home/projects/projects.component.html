@@ -3,7 +3,13 @@
     <div class="projects-grid">
       <p-card 
         *ngFor="let project of projects" 
-        [style]="{ width: '25rem', overflow: 'hidden' }"
+        [style]="{ 
+          width: '21rem', 
+          overflow: 'hidden', 
+          height: '40rem',
+          opacity: '0.9',
+          blacksadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)',
+          aling: 'center'}"
       >
         <ng-template #header>
           <img [alt]="project.title" class="w-full" [src]="project.imageUrl" />

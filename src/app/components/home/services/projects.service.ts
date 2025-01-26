@@ -39,7 +39,7 @@ export class ProjectsService {
         `,
         websiteUrl: 'https://www.linkedin.com/posts/lardevpro_me-alegra-comunicar-que-de-entre-todos-los-activity-7195437767886045184-eeu4?utm_source=share&utm_medium=member_desktop',
         imageUrl: 'assets/images/street_fighter_prject.jpg',
-        gitHubUrl: 'https://github.com/lardevpro/Street-Figther',
+        gitHubUrl: 'https://github.com/lardevpro/Street-Figther-Maven',
         downloadUrl: 'assets/games/StreetFighter-0.0.1-SNAPSHOT.jar',
       }
     ];

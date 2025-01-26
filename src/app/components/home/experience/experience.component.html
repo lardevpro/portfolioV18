@@ -6,9 +6,9 @@
         <p-accordion-panel [value]="i">
           <p-accordion-header>{{ exp.date }}</p-accordion-header>
           <p-accordion-content>
-            <p style="margin-left: 5rem;"><strong>{{ exp.company }}</strong></p>
+            <p class="datas">Empresa:   <strong>{{ exp.company }}</strong></p>
             <ng-container *ngFor="let data of splitDescription(exp.description || '')">
-              <li style="margin-left: 10rem;">{{ data }}.</li>
+              <li >{{ data }}.</li>
             </ng-container>
           </p-accordion-content>
         </p-accordion-panel>

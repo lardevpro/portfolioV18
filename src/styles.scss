@@ -15,6 +15,20 @@ html {
   ));
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    @include mat.theme((
+      color: (
+        theme-type: dark,
+        primary: mat.$azure-palette,
+        tertiary: mat.$blue-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    ));
+  }
+}
+
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap CSS file. */
@@ -34,10 +48,12 @@ body {
 
 p {
   font-size: 20px;
-  color: rgb(46, 43, 43);
+  //color: rgb(46, 43, 43);
+  font-family: 'CanelaText-Light';
 }
 
 h1 {
   text-align: center;
   text-decoration: underline;
+  font-family: 'CanelaText-Light';
 }

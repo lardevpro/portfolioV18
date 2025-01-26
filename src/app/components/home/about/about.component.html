@@ -1,16 +1,12 @@
 <section id="about" class="about-section">
   <h1 class="text-center">{{ about.welcome }}</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <img [src]="about.imageUrl" class=" rounded-circle profile-image" alt="Foto de perfil">
-      </div>
-      <div class="col-md-8">
-        <h3>{{ about.titleSection }}</h3>
-        <p>{{ about.presentation }}</p>
-        <p>{{ about.description }}</p>
-        <p>{{ about.observation }}</p>
-      </div>
+  <p-card [header]="about.titleSection">
+    <div class="col-md-8">
+      
+      <p-image [src]="about.imageUrl" alt="imagen perfil" width="250px" />
+      <p>{{ about.presentation }}</p>
+      <p>{{ about.description }}</p>
+      <p>{{ about.observation }}</p>
     </div>
-  </div>
+  </p-card>
 </section>

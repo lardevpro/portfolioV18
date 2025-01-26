@@ -48,8 +48,6 @@ export class HomeComponent implements OnInit {
     //SECTION Experience
     this.experienceService.getExperience$().subscribe({next:n=> {this.experienceModel = n}});
     //SECTION Projects
-    this.projectsService.getProjects$().subscribe({next:p=> {this.projectsModel = p
-      console.log(this.projectsModel);
-    }});
+    this.projectsService.getProjects$().subscribe({next:p=> {this.projectsModel = p}});
   }
 }

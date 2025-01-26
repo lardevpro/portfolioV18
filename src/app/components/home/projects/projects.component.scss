@@ -2,6 +2,7 @@
   text-align: center;
   margin: 2rem 0;
   
+  
   h1 {
     font-size: 2rem;
     color: #333;
@@ -69,13 +70,21 @@ p-card {
 .social-networks img {
   width: 4rem;
   height: 4rem;
-  margin-right: 4rem;
+  margin-right: 10rem;
   cursor: pointer;
   transition: transform 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
   }
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; /* Ajusta el espacio entre los botones según sea necesario */
+  margin-right: 4px;
+  
 }
 
 /* Estilos responsivos */

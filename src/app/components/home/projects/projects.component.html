@@ -14,7 +14,7 @@
           {{ project.description }}
         </p>
         <ng-template #footer>
-          <div class="flex gap-4 mt-1">
+          <div class="flex gap-4 mt-1 button-container">
             <a 
               [href]="project.gitHubUrl" 
               target="_blank" 
@@ -25,11 +25,11 @@
               <img [src]="githubImage" alt="logo GitHub" />
             </a>
             <p-button *ngIf="project.websiteUrl !== ''"
-              label="Visitar sitio" 
+              label="Publicación" 
               class="w-full" 
-              (onClick)="navigateToSite(project.websiteUrl)"
+              (onClick)="project.websiteUrl && navigateToSite(project.websiteUrl)"
             ></p-button>
-              <button *ngIf="project.downloadUrl !== ''" (click)="downloadFile('assets/games/StreetFighter-0.0.1-SNAPSHOT.jar','street-figther-javaSE.jar')">Descargar Fichero</button>
+            <p-button *ngIf="project.downloadUrl" (click)="downloadFile(project.downloadUrl!, 'street-figther-javaSE.jar')">Descarga .jar</p-button>
           </div>
         </ng-template>
       </p-card>

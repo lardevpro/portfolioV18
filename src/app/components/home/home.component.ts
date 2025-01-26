@@ -9,6 +9,7 @@ import { ExperienceComponent } from "./experience/experience.component";
 import { ExperienceService } from './services/experience.service';
 import { ContactComponent } from "./contact/contact.component";
 import { ProjectsComponent } from "./projects/projects.component";
+import { ProjectsService } from './services/projects.service';
 
 @Component({
     selector: 'app-home',
@@ -30,55 +31,25 @@ export class HomeComponent implements OnInit {
   aboutModel!: any;
   educationModel!:any[];
   experienceModel!:any[];
+  projectsModel!:any[];
 
   constructor(
               private aboutService: AboutService,
               private edicationService: EducationService,
               private experienceService: ExperienceService,
+              private projectsService: ProjectsService,
   ) {}
-
-
-
 
   ngOnInit(): void {
     //SECTION About
-    this.aboutService.getAboutModel$().subscribe({
-      next:a=> {
-        this.aboutModel = a
-      },
-      error:e=> {
-        console.error(`Error al cargar About` + e)
-      },
-      complete: ()=> {
-        console.log(`About Cargado --> `+this.aboutModel)
-      }
-    });
-
-
+    this.aboutService.getAboutModel$().subscribe({next:a=> {this.aboutModel = a}});
     //SECTION Education
-    this.edicationService.getEducation$().subscribe({
-      next:e=> {
-        this.educationModel = e
-      },
-      error:e=> {
-        console.error(`Error al cargar Education` + e);
-      },
-      complete: ()=> {
-        console.log(`Education Caragado --> `+this.educationModel)
-      }
-    });
-
+    this.edicationService.getEducation$().subscribe({next:e=> {this.educationModel = e}});
     //SECTION Experience
-    this.experienceService.getExperience$().subscribe({
-      next:n=> {
-        this.experienceModel = n
-      },
-      error:e=> {
-        console.error(`Error al cargar Experience` + e);
-      },
-      complete:()=> {
-        console.log(`Experience Cargado --> `+this.experienceModel)
-      }
-    });
+    this.experienceService.getExperience$().subscribe({next:n=> {this.experienceModel = n}});
+    //SECTION Projects
+    this.projectsService.getProjects$().subscribe({next:p=> {this.projectsModel = p
+      console.log(this.projectsModel);
+    }});
   }
 }

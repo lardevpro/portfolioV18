@@ -1,22 +1,24 @@
-<section id="experience"><br><br>
-<div class="container" >
-  <h1>Experiencia Laboral</h1>
-  <div *ngFor="let exp of experiences; let i = index" class="experience-item">
-    <div class="card">
-      <div class="card-header">
-        <h4>{{ exp.position }}</h4>
-      </div>
-      <div class="card-body">
-        <p><strong>{{ exp.company }}</strong> ({{ exp.date }})</p>
-        <p>{{ exp.description }}</p>
-        <ul>
-          <!-- Filtramos los valores vacíos después de dividir por el punto -->
-          <ng-container *ngFor="let data of splitDescription(exp.description || '')">
-            <li>{{ data }}.</li>
-          </ng-container>
-        </ul>
-      </div>
-    </div>
+<section id="experience"><br>
+  <div class="container">
+    <h1>Experiencia Laboral</h1>
+    <p-accordion [value]="openedPanels" [multiple]="true">
+      <ng-container *ngFor="let exp of experiences; let i = index">
+        <p-accordion-panel [value]="i">
+          <p-accordion-header>{{ exp.date }}</p-accordion-header>
+          <p-accordion-content>
+            <p style="margin-left: 5rem;"><strong>{{ exp.company }}</strong></p>
+            <ng-container *ngFor="let data of splitDescription(exp.description || '')">
+              <li style="margin-left: 10rem;">{{ data }}.</li>
+            </ng-container>
+          </p-accordion-content>
+        </p-accordion-panel>
+      </ng-container>
+    </p-accordion>
   </div>
-</div>
 </section>
+
+
+
+
+
+

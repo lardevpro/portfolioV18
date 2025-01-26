@@ -1,78 +1,67 @@
+#experience {
+  background-color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  transition: opacity 0.3s ease; /* Efecto de suavizado */
+}
+
 .container {
-    padding: 40px;
-    background-color: rgb(217, 215, 215);
-    border-radius: 10px;
-    opacity: 0.9;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.p-accordion-content li {
+  margin-left: 10rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* Reducción del tamaño del título en dispositivos pequeños */
   }
-  
-  .experience-item {
-    margin-bottom: 30px;
-    transition: transform 0.3s ease;
-  }
-  
-  .experience-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .card {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(89, 89, 89, 0.1);
-    opacity: 0.95;
-  }
-  
-  .card-header {
-    background-color: #f3eded;
-    
-    padding: 15px;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .card-header h4 {
-    font-size: 1.8rem;
-    color: #202049;
-    margin: 0;
-  }
-  
-  .card-body {
+
+  .container {
     padding: 20px;
   }
-  
-  .card-body p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 10px;
+
+  .p-accordion-header {
+    font-size: 1rem; /* Reducción de tamaño en móviles */
   }
-  
-  ul {
-    padding-left: 20px;
+
+  .p-accordion-header:hover {
+    transform: scale(1.02); /* Menos zoom en móviles */
   }
-  
-  ul li {
-    font-size: 1rem;
-    color: #777;
-    margin-bottom: 5px;
+
+  .p-accordion-content p {
+    font-size: 0.9rem;
   }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      padding: 20px;
-    }
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    .card-header h4 {
-      font-size: 1.5rem;
-    }
-  
-    .card-body p {
-      font-size: 1rem;
-    }
-  
-    .card-body ul li {
-      font-size: 0.9rem;
-    }
+
+  .p-accordion-content li {
+    margin-left: 5rem; /* Reducir margen en móviles */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .p-accordion-header {
+    font-size: 0.9rem;
+  }
+
+  .p-accordion-content p {
+    font-size: 0.8rem;
+  }
+
+  .p-accordion-content li {
+    margin-left: 3rem; 
+  }
+}

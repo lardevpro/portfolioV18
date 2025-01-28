@@ -45,4 +45,6 @@ export class NavbarComponent {
       this.closeNavbar();
     }
   }
+
+  
 }

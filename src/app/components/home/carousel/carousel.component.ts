@@ -31,7 +31,8 @@ export class CarouselComponent {
     'assets/images/ionic_moviles.jpg',
     'assets/images/java_desde_cero.jpg',
     'assets/images/java_xml.jpg',
-    'assets/images/jekyll_github_pages.jpg'
+    'assets/images/jekyll_github_pages.jpg',
+    'assets/images/hakaton.jpg',
   ];
 
   urls = [

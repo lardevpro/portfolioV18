@@ -17,10 +17,13 @@ export class ExperienceService  {
       logo: 'assets/images/accuro.png',
       date: 'sep. 2024 -dic. 2024',
       position: 'Asistente de Desarrollo de Software y Sistemas',
-      description: `Apoyo en el desarrollo frontend de aplicaciones web 
-      usando Angular.Colaboración en la implementación y personalización de sistemas ERP.
-      Maquetación y diseños de sitios web en WordPress.
-      Resolución de incidencias técnicas y soporte en la documentación.`,
+      description: `Creando soluciones para el  desarrollo web 
+      usando Angular en el proyecto OPPO Community.
+      Implementación y personalización de sistemas ERP Odoo para el proyecto Metalisterías Madrid.
+      Maquetando y diseñando sitios web en WordPress para la empresa Accuro Technology.
+      Solcionando incidencias técnicas y soporte en la documentación.
+      Participé en un Hackathon GInPS (Global Innovation in Problem Solving) y algunos eventos de tecnología.
+      Paricipé en una master class para el dominio e implementación de RPAs impartido por la compañia ocket® Host Access for RPA.`,
       technologies: ['Angular','Odoo','WordPress', 'Python','HTML', 'CSS', 
                     'JavaScript', 'TypeScript'],
     },{
@@ -29,9 +32,9 @@ export class ExperienceService  {
       position: 'Conductor Profeisonal (internacional)',
       location: 'Córdoba (Andalucía, España)',
       date: 'may. 2024 - ago. 2024',
-      description: `Revisión y mantenimiento de flota de vehículos.
-                    Gestion administrativa de documentación de transporte.
-                    Gestión del Tiempo y Planificación de Rutas.
+      description: `Revisando y manteniendo la flota de vehículos.
+                    Gestionando y administrando la documentación de transporte.
+                    Gestionando el tiempo y la planificando Rutas.
                     `,
       technologies: ['Transporte', 'Logística', 
       'Conducción', 'Seguridad', 'Mantenimiento','Responsabilidad'],	

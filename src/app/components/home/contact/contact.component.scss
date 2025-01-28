@@ -1,3 +1,6 @@
+
+
+
 h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -77,6 +80,7 @@ h1 {
   .rights p {
     margin: 0;
   }
+
   
   @media screen and (max-width: 768px) {
     .social-networks ul {
@@ -96,3 +100,48 @@ h1 {
     }
   }
   
+
+
+  //formulario
+  .card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[pInputText] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button[pButton] {
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[pButton]:hover {
+    background-color: #0056b3;
+  }

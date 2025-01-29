@@ -22,17 +22,16 @@ export class EducationService {
         equipo de forma colaborativa y a gestionar proyectos con enfoque en la resolución de 
         problemas complejos. Gracias a mi dedicación y habilidades técnicas, superé todas las 
         asignaturas y proyectos con éxito.`,
-        date: '2021 - 2024'
+        date: 'sep 2021 - dic 2024'
       },
       {
         title: 'Acceso a La Universidad para Mayores de 25 Años',
         institute: 'UNED (Valdepeñas)',
-        description: `Este proceso me permitió reforzar mis conocimientos en diversas áreas 
-        académicas y desarrollar habilidades clave como la organización, la autodisciplina y 
-        la gestión del tiempo, fundamentales para el estudio autónomo. Gracias a mi esfuerzo y 
-        dedicación, logré superar con éxito las pruebas de acceso, lo que demuestra mi 
-        capacidad para afrontar retos académicos de manera eficiente.`,
-        date: '2020 - 2021'
+        description: `Este proceso me permitió reforzar mis conocimientos en diversas áreas académicas y desarrollar habilidades 
+                      clave como la organización, la autodisciplina y la gestión del tiempo, fundamentales para el estudio autónomo. 
+                      Gracias a mi esfuerzo y dedicación, logré superar con éxito las pruebas de acceso, demostrando así mi capacidad para 
+                      afrontar retos académicos de manera eficiente.`,
+        date: 'sep 2020 - jun 2021'
       }
     ];
     return of(this.education); 

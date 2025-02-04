@@ -31,9 +31,9 @@ export class ExperienceService  {
       position: 'Conductor Profeisonal (internacional)',
       location: 'Córdoba (Andalucía, España)',
       date: 'may 2024 - ago 2024',
-      description: `Revisando y manteniendo la flota de vehículos.
-                    Gestionando y administrando la documentación de transporte.
-                    Gestionando el tiempo y la planificando Rutas.
+      description: `Revisando y manteniendo la flota de vehículos → Atención al detalle.
+                    Gestionando y administrando la documentación de transporte → Organización.
+                    Gestionando el tiempo y la planificando Rutas → Gestión del tiempo.
                     `,
       technologies: ['Transporte', 'Logística', 
       'Conducción', 'Seguridad', 'Mantenimiento','Responsabilidad'],	
@@ -44,9 +44,9 @@ export class ExperienceService  {
       position: 'Conductor Profeisonal',
       location: 'Madrid (Madird)',
       date: 'jun 2023 - ago 2023',
-      description: `Transporte de mercancías por carretera.
-                    Gestión del Tiempo y Planificación de Rutas.
-                    Revisión y mantenimiento de flota de vehículos.`,
+      description: `Transporte de mercancías por carretera → Responsabilidad.
+                    Coordinación con compañeros → Trabajo en equipo.
+                    Comunicación efectiva para interactuar de manera clara y profesional con los clientes → Atención al cliente.`,
       technologies: ['Transporte', 'Logística', 
       'Conducción', 'Seguridad', 'Mantenimiento','Responsabilidad'],	
     },
@@ -56,9 +56,9 @@ export class ExperienceService  {
     position:'Conductor Profesional',
     location: 'Madrid (Madrid)',
     date: 'feb 2020 - nov 2020',
-    description: `Conducción segura y cumplimiento de las normas de circulación.
-                  Mantenimiento de vehiculos.
-                  Gestión de documentación de transporte.
+    description: `Resolución de problemas para afrontar imprevistos de manera eficiente → Gestión de incidencias.
+                  Implementación de procesos de mejora continua → Pensamiento crítico.
+                  Resiliencia para adaptarse a situaciones imprevistas, como retrasos o cambios en las rutas, sin perder eficiencia ni concentración → Gestión de estrés.
                   `,
     technologies: ['Producción', 'Automoción', 'Trabajo en equipo', 'Responsabilidad'],
   },
@@ -68,9 +68,9 @@ export class ExperienceService  {
     position:'Conductor Profesional (internacional)',
     location: 'Ribarroja de Turia (Valencia)',
     date: 'abr 2017 - dic 2019',
-    description: `Gestión de documentación.
-                  Encargado de mecánica y mantenimiento de vehiculos.
-                  Conducción segura y cumplimiento de las normas de circulación.`,
+    description: `Seguimiento de pedidos y entregas → Adaptabilidad.
+                  Supervisión de la calidad del servicio → Empatía.
+                  Gestión de recursos logísticos → Planificación.`,
     technologies: ['Producción', 'Automoción', 'Trabajo en equipo', 'Responsabilidad'],
   }];
     return of(this.experience);

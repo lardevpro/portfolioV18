@@ -32,7 +32,13 @@ export class CarouselComponent {
     'assets/images/java_desde_cero.jpg',
     'assets/images/java_xml.jpg',
     'assets/images/jekyll_github_pages.jpg',
-    'assets/images/hakaton.jpg',
+    'assets/images/junit5.jpg',
+    'assets/images/primera_app_spring_boot.jpg',
+    'assets/images/spring_boot_angular.jpg',
+    'assets/images/spring_core_5.jpg',
+    'assets/images/spring_data_JPA.jpg',
+    'assets/images/test_javascript.jpg',
+    'assets/images/test_mysql.jpg',
   ];
 
   urls = [

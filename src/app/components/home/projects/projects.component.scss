@@ -2,9 +2,6 @@
   text-align: center;
   margin: 2rem 0;
   
-  
-
-
   .projects-grid {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +10,10 @@
   }
 }
 
+.button-container a {
+  margin-bottom: 0px;
 
+}
 p-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
@@ -28,24 +28,21 @@ p-card {
 
   p {
     font-size: 0.95rem;
-    //color: #555;
     line-height: 1.5;
     padding: 0 1rem;
     text-align: justify;
   }
 
- 
 
   ::ng-deep .p-card-subtitle {
     font-size: 1rem;
     text-align: center;
-    //color: #666;
     margin-bottom: 1rem;
   }
 
   ::ng-deep .p-card-footer {
-    display: flex;
-    gap: 1rem;
+    //display: flex;
+    //gap: 1rem;
     justify-content: center;
     padding: 8px;
     background-color: #e5e2e2;
@@ -55,9 +52,9 @@ p-card {
 
 
 .social-networks img {
-  width: 4rem;
-  height: 4rem;
-  margin-right: 10rem;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 15rem;
   cursor: pointer;
   transition: transform 0.3s ease;
 

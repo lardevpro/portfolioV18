@@ -17,12 +17,12 @@ export class ExperienceService  {
       logo: 'assets/images/accuro.png',
       date: 'sep. 2024 -dic. 2024',
       position: 'Desarrollador de Software y Sistemas',
-      description: `Creando soluciones para el desarrollo web usando Angular en el proyecto OPPO Community.
-                    Implementación y personalización de sistemas ERP Odoo para el proyecto Metalistería Madrid.
-                    Maquetación y diseñando de sitios web en WordPress para la empresa Accuro Technology.
-                    Solucioné incidencias técnicas y brindandé soporte en la documentación.
-                    Participé en un Hackathon GInPS (Global Innovation in Problem Solving) y en algunos eventos de tecnología.
-                    Hice una masterclass sobre el dominio e implementación de RPAs, impartida por la compañía Rocket® Host Access for RPA.`,
+      description: `Desarrollo web con Angular en el proyecto OPPO Community, creando soluciones adaptadas a las necesidades del cliente.
+                    Implementación y personalización de sistemas ERP Odoo para Metalistería Madrid, optimizando la gestión empresarial.
+                    Maquetación y diseño web con WordPress para la empresa Accuro Technology.
+                    Resolución de incidencias técnicas y soporte en la documentación de proyectos.
+                    Participación en el Hackathon GInPS (Global Innovation in Problem Solving) y eventos tecnológicos.
+                    Impartición de una masterclass sobre RPAs en colaboración con Rocketbot®  for RPA.`,
       technologies: ['Angular','Odoo','WordPress', 'Python','HTML', 'CSS', 
                     'JavaScript', 'TypeScript'],
     },{
@@ -31,9 +31,9 @@ export class ExperienceService  {
       position: 'Conductor Profeisonal (internacional)',
       location: 'Córdoba (Andalucía, España)',
       date: 'may 2024 - ago 2024',
-      description: `Revisando y manteniendo la flota de vehículos → Atención al detalle.
-                    Gestionando y administrando la documentación de transporte → Organización.
-                    Gestionando el tiempo y la planificando Rutas → Gestión del tiempo.
+      description: `Revisión y mantenimiento de flota de vehículos → Atención al detalle.
+                    Gestión y administración de documentación de transporte → Organización.
+                    Planificación y optimización de rutas → Gestión del tiempo.
                     `,
       technologies: ['Transporte', 'Logística', 
       'Conducción', 'Seguridad', 'Mantenimiento','Responsabilidad'],	
@@ -46,7 +46,7 @@ export class ExperienceService  {
       date: 'jun 2023 - ago 2023',
       description: `Transporte de mercancías por carretera → Responsabilidad.
                     Coordinación con compañeros → Trabajo en equipo.
-                    Comunicación efectiva para interactuar de manera clara y profesional con los clientes → Atención al cliente.`,
+                    Interacción clara y profesional con clientes → Atención al cliente.`,
       technologies: ['Transporte', 'Logística', 
       'Conducción', 'Seguridad', 'Mantenimiento','Responsabilidad'],	
     },
@@ -56,9 +56,9 @@ export class ExperienceService  {
     position:'Conductor Profesional',
     location: 'Madrid (Madrid)',
     date: 'feb 2020 - nov 2020',
-    description: `Resolución de problemas para afrontar imprevistos de manera eficiente → Gestión de incidencias.
-                  Implementación de procesos de mejora continua → Pensamiento crítico.
-                  Resiliencia para adaptarse a situaciones imprevistas, como retrasos o cambios en las rutas, sin perder eficiencia ni concentración → Gestión de estrés.
+    description: `Resolución de problemas ante imprevistos → Gestión de incidencias.
+                  Optimización e implementación de mejoras continuas → Pensamiento crítico.
+                  Adaptabilidad a retrasos y cambios en rutas sin perder eficiencia → Gestión del estrés.
                   `,
     technologies: ['Producción', 'Automoción', 'Trabajo en equipo', 'Responsabilidad'],
   },

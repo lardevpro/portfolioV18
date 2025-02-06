@@ -18,9 +18,8 @@ export class AboutService {
       imageUrl: `/assets/images/photo.png`,
       description: `Técnico Superior en Desarrollo de Aplicaciones Multiplataforma recién titulado.
                     Fui participante en el Hackathon GInPS 2024, con el reto proporcionado por el grupo Aena.
-                    Mi experiencia en el mundo laboral me ha dotado de habilidades (Soft Skills) como constancia, compromiso, disciplina y 
-                    toma de decisiones en contextos exigentes, lo que me permite marcar la diferencia y aportar valor a sus
-                    proyectos.`,
+                    Gracias a mi experiencia laboral, he desarrollado habilidades clave como la constancia, el compromiso,
+                    la disciplina y la toma de decisiones en entornos exigentes.`,
       observation: `He dado soluciones a retos en el proyecto OPPO Community con Angular además de configurar y 
                     generar módulos personalizados para  Metalisterías Madrid con el  sistemas de gestión empresarial (ERP)  Odoo.
                     Estoy abierto a aprender cualquier tipo de tecnología puesto que este sector me apasiona.

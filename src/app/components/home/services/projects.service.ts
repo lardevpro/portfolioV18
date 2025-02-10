@@ -41,7 +41,21 @@ export class ProjectsService {
         imageUrl: 'assets/images/street_fighter_prject.jpg',
         gitHubUrl: 'https://github.com/lardevpro/Street-Figther-Maven',
         downloadUrl: 'assets/games/StreetFighter-0.0.1-SNAPSHOT.jar',
-      }
+      },
+      {
+        title: 'PoKemon ',
+        subtitle: 'Android Studio - Java ',
+        description: `
+        Juego de memoria desarrollado en Android Studio donde los jugadores deben emparejar cartas de Pikachu.
+        Incorpora captura de fotos, sonidos, animaciones y manejo de hilos para una experiencia interactiva. 
+        Utiliza almacenamiento local para guardar puntajes y configuraciones.
+        (Pronto dispobible en para descargar).
+        `,
+        websiteUrl: 'https://youtu.be/D6yzhVNGWMU',
+        imageUrl: 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/pikachu-pokemon-escarlata-purpura-2888180.jpg?tf=1200x',
+        gitHubUrl: '',
+        downloadUrl: '',
+      },
     ];
     return of(this.projects);
   }

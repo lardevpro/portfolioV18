@@ -43,7 +43,7 @@ export class ProjectsService {
         downloadUrl: 'assets/games/StreetFighter-0.0.1-SNAPSHOT.jar',
       },
       {
-        title: 'PoKemon ',
+        title: 'PoKemon',
         subtitle: 'Android Studio - Java ',
         description: `
         Juego de memoria desarrollado en Android Studio donde los jugadores deben emparejar cartas de Pikachu.
@@ -55,6 +55,19 @@ export class ProjectsService {
         imageUrl: 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/pikachu-pokemon-escarlata-purpura-2888180.jpg?tf=1200x',
         gitHubUrl: '',
         downloadUrl: '',
+      },
+      {
+        title: 'Busca Minas',
+        subtitle: 'Java SE - Swing ',
+        description: `
+        Juego de Buscaminas desarrollado en Java SE con Swing, descubre minas sin detonarlas.
+        Utiliza hilos para el cronómetro, polimorfismo en celdas, herencia en eventos y métodos recursivos para revelar zonas.
+        Emplea estructuras dinámicas para gestionar el tablero y componentes visuales interactivos.
+        `,
+        websiteUrl: 'https://www.youtube.com/watch?v=6dZdDwA8tm0',
+        imageUrl: 'https://img.itch.zone/aW1nLzU1OTc0MDYucG5n/original/KlLxia.png',
+        gitHubUrl: 'https://github.com/lardevpro/minesweeper',
+        downloadUrl: 'assets/games/buscaminas.jar',
       },
     ];
     return of(this.projects);

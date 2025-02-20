@@ -39,6 +39,7 @@ export class CarouselComponent {
     'assets/images/spring_data_JPA.jpg',
     'assets/images/test_javascript.jpg',
     'assets/images/test_mysql.jpg',
+    'assets/images/accenture_java.png',
   ];
 
   urls = [

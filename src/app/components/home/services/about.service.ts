@@ -15,7 +15,7 @@ export class AboutService {
       titleSection: `Sobre Mi`,
       welcome: `¡Bienvenido a Mi Portfolio!`,
       presentation: `Mi nombre es Juan:`,
-      imageUrl: `/assets/images/photo.png`,
+      imageUrl: `/assets/images/photo.webp`,
       description: `Técnico Superior en Desarrollo de Aplicaciones Multiplataforma recién titulado.
                     Fui participante en el Hackathon GInPS 2024, con el reto proporcionado por el grupo Aena.
                     Gracias a mi experiencia laboral, he desarrollado habilidades clave como la constancia, el compromiso,

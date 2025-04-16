@@ -25,7 +25,11 @@ export const appConfig: ApplicationConfig = {
               provideAnimationsAsync(),
               providePrimeNG({
                   theme: {
-                      preset: Aura
+                      preset: Aura,
+                      options: {
+                        // desactiva por completo la detección de dark/light
+                        darkModeSelector: false
+                      }
                   }
               })
               ]

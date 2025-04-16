@@ -18,7 +18,7 @@ export class ProjectsComponent {
   @Input() projects!:Project[];
 
 
-  githubImage = 'assets/images/github.png';
+  githubImage = 'assets/images/github.webp';
   items: MenuItem[] = []; 
 
   

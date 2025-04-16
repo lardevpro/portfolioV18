@@ -24,7 +24,7 @@ export class ProjectsService {
           Este proyecto demuestra una interacción eficiente entre el frontend y el backend.
         `,
         websiteUrl: 'https://api-angular-spring.web.app',
-        imageUrl: 'assets/images/api_rest_img.jpeg',
+        imageUrl: 'assets/images/api_rest_img.webp',
         gitHubUrl: 'https://github.com/lardevpro/srping-angular',
         downloadUrl: '',
       },
@@ -38,12 +38,12 @@ export class ProjectsService {
         (Archivo .jar disponible para descargar).
         `,
         websiteUrl: 'https://www.youtube.com/watch?v=wxjLiR8M8uw',
-        imageUrl: 'assets/images/street_fighter_prject.jpg',
+        imageUrl: 'assets/images/street_fighter_prject.webp',
         gitHubUrl: 'https://github.com/lardevpro/Street-Figther-Maven',
         downloadUrl: 'assets/games/StreetFighter-0.0.1-SNAPSHOT.jar',
       },
       {
-        title: 'PoKemon',
+        title: 'Pokemon Match',
         subtitle: 'Android Studio - Java ',
         description: `
         Juego de memoria desarrollado en Android Studio donde los jugadores deben emparejar cartas de Pikachu.
@@ -52,7 +52,7 @@ export class ProjectsService {
         (Pronto dispobible en para descargar).
         `,
         websiteUrl: 'https://youtu.be/D6yzhVNGWMU',
-        imageUrl: 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/pikachu-pokemon-escarlata-purpura-2888180.jpg?tf=1200x',
+        imageUrl: 'assets/images/pokemon.webp',
         gitHubUrl: '',
         downloadUrl: '',
       },

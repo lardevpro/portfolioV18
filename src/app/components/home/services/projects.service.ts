@@ -16,6 +16,19 @@ export class ProjectsService {
 
     this.projects = [
       {
+        title: 'API RESTful',
+        subtitle: 'Node.js - Angular',
+        description: 
+        ` Estoy desarrollando esta app con arquitectura MVC en Express (Node). Uso Zod, Router y CORS.
+         Está hosteada en Render. La base de datos PostgreSQL se aloja en Supabase. El CRUD del 
+         frontend sigue en desarrollo.(El servidor está en reposo, la reactivación puede demorar)
+        `,
+        websiteUrl: 'https://rest-api-node-js-deploy.onrender.com/movies',
+        imageUrl: 'assets/images/node_express.webp',
+        gitHubUrl: 'https://github.com/lardevpro/rest-api-node.js-deploy',
+        downloadUrl: '',
+      },
+      {
         title: 'API REST',
         subtitle: 'Spring - Angular',
         description: `
@@ -24,7 +37,7 @@ export class ProjectsService {
           Este proyecto demuestra una interacción eficiente entre el frontend y el backend.
         `,
         websiteUrl: 'https://api-angular-spring.web.app',
-        imageUrl: 'assets/images/api_rest_img.webp',
+        imageUrl: 'assets/images/spring-boot.webp',
         gitHubUrl: 'https://github.com/lardevpro/srping-angular',
         downloadUrl: '',
       },

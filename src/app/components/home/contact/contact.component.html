@@ -1,121 +1,44 @@
-<h1 id="contact" class="text-2xl font-bold text-center mb-6">Contáctame</h1><br><br>
-<!--
-<p-toast></p-toast>
-<div class="card max-w-lg mx-auto p-6 shadow-lg rounded-xl border border-gray-200">
-  <form class="contact-form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
-     Nombre 
-    <div class="form-group mb-4">
-      <label for="name" class="block text-sm font-medium mb-2">Nombre *</label>
-      <input 
-        id="name" 
-        pInputText 
-        [(ngModel)]="name" 
-        name="name" 
-        placeholder="Nombre" 
-        class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-        required
-        #nameField="ngModel" />
-        <div *ngIf="nameField.invalid && (nameField.touched || nameField.dirty)" class="text-red-500 text-sm mt-1">
-          El nombre es obligatorio.
-        </div>
-        
-    </div>
+<div [ngClass]="{'contact-wrapper': true, 'minimizado': minimizado}">
+  <a href="#contact">
+  <h1 class="text-2xl font-bold text-center mb-6">Contáctame</h1><br><br>
+  </a>
+  <!-- Redes sociales -->
+  <div class="social-networks mt-8">
+    <ul class="flex justify-center gap-4">
+      <li>
+        <a [href]="contact.urlLinkedin" target="_blank" rel="noopener noreferrer" [title]="contact.linkedinTooltip">
+          <img [src]="contact.linkedinImage" alt="logo linkedin" class="w-8 h-8">
+        </a>
+      </li>
+      <li>
+        <a [href]="contact.urlGithub" target="_blank" rel="noopener noreferrer" [title]="contact.githubTooltip">
+          <img [src]="contact.githubImage" alt="logo GitHub" class="w-8 h-8">
+        </a>
+      </li>
+      <li>
+        <a [href]="contact.urlCurriculum" target="_blank" rel="noopener noreferrer" [title]="contact.cvTooltip">
+          <img [src]="contact.cvImage" alt="Curriculum Vitae Imagen" class="w-8 h-8">
+        </a>
+      </li>
+      <li>
+        <a [href]="contact.urlMail" target="_blank" rel="noopener noreferrer" [title]="contact.sendEmailTooltip">
+          <img [src]="contact.mailImage" alt="logo email" class="w-8 h-8">
+        </a>
+      </li>
+      <li>
+        <button 
+          (click)="copyEmail()" 
+          class="copy-button text-blue-500 hover:text-blue-600 focus:outline-none" 
+          [title]="contact.copyEmailTooltip">
+          Copiar Email
+        </button>
+      </li>
+    </ul>
+  </div>
 
-     Email 
-    <div class="form-group mb-4">
-      <label for="email" class="block text-sm font-medium mb-2">Correo *</label>
-      <input 
-        id="email" 
-        pInputText 
-        [(ngModel)]="email" 
-        name="email" 
-        placeholder="Correo" 
-        class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-        required
-        email
-        #emailField="ngModel" />
-      <div *ngIf="emailField.invalid && emailField.touched" class="text-red-500 text-sm mt-1">Ingresa un correo válido.</div>
-    </div>
-
-     Asunto 
-    <div class="form-group mb-4">
-      <label for="subject" class="block text-sm font-medium mb-2">Asunto *</label>
-      <input 
-        id="subject" 
-        pInputText 
-        [(ngModel)]="subject" 
-        name="subject" 
-        placeholder="Asunto" 
-        class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-        required
-        #subjectField="ngModel" />
-      <div *ngIf="subjectField.invalid && subjectField.touched" class="text-red-500 text-sm mt-1">El asunto es obligatorio.</div>
-    </div>
-
-    Cuerpo del mensaje
-    <div class="form-group mb-4">
-      <label for="message" class="block text-sm font-medium mb-2">Mensaje *</label>
-      <p-editor 
-        [(ngModel)]="text" 
-        name="text" 
-        [style]="{ height: '10rem', width: '100%' }"
-        class="rounded-lg"
-        required
-        #messageField="ngModel"></p-editor>
-      <div *ngIf="messageField.touched && (messageField.invalid || (text?.split(' ')?.length ?? 0) < 10)" class="text-red-500 text-sm mt-1">
-        El mensaje debe tener al menos 100 carácteres.
-      </div>
-    </div>
-
-     Botón de enviar
-    <div class="form-group text-center">
-      <button 
-      pButton 
-      type="submit" 
-      label="Enviar" 
-      class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
-      Enviar
-    </button>
-    </div>
-  </form>
-</div> -->
-
-<!-- Redes sociales -->
-<div class="social-networks mt-8">
-  <ul class="flex justify-center gap-4">
-    <li>
-      <a [href]="contact.urlLinkedin" target="_blank" rel="noopener noreferrer" [title]="contact.linkedinTooltip">
-        <img [src]="contact.linkedinImage" alt="logo linkedin" class="w-8 h-8">
-      </a>
-    </li>
-    <li>
-      <a [href]="contact.urlGithub" target="_blank" rel="noopener noreferrer" [title]="contact.githubTooltip">
-        <img [src]="contact.githubImage" alt="logo GitHub" class="w-8 h-8">
-      </a>
-    </li>
-    <li>
-      <a [href]="contact.urlCurriculum" target="_blank" rel="noopener noreferrer" [title]="contact.cvTooltip">
-        <img [src]="contact.cvImage" alt="Curriculum Vitae Imagen" class="w-8 h-8">
-      </a>
-    </li>
-    <li>
-      <a [href]="contact.urlMail" target="_blank" rel="noopener noreferrer" [title]="contact.sendEmailTooltip">
-        <img [src]="contact.mailImage" alt="logo email" class="w-8 h-8">
-      </a>
-    </li>
-    <li>
-      <button 
-        (click)="copyEmail()" 
-        class="copy-button text-blue-500 hover:text-blue-600 focus:outline-none" 
-        [title]="contact.copyEmailTooltip">
-        Copiar Email
-      </button>
-    </li>
-  </ul>
-</div>
-
-<!-- Derechos -->
-<div class="rights text-center mt-6 text-sm text-gray-600">
-  <p>{{ contact.cpyrigthtext }}</p>
-  <p>&copy; 2025 {{ contact.myname }}</p>
+  <!-- Derechos -->
+  <div class="rights text-center mt-6 text-sm text-gray-600">
+    <p>{{ contact.cpyrigthtext }}</p>
+    <p>&copy; 2025 {{ contact.myname }}</p>
+  </div>
 </div>

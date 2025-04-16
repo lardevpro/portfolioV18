@@ -16,15 +16,14 @@ export class AboutService {
       welcome: `¡Bienvenido a Mi Portfolio!`,
       presentation: `Mi nombre es Juan:`,
       imageUrl: `/assets/images/photo.webp`,
-      description: `Técnico Superior en Desarrollo de Aplicaciones Multiplataforma recién titulado.
-                    Fui participante en el Hackathon GInPS 2024, con el reto proporcionado por el grupo Aena.
-                    Gracias a mi experiencia laboral, he desarrollado habilidades clave como la constancia, el compromiso,
-                    la disciplina y la toma de decisiones en entornos exigentes.`,
-      observation: `He dado soluciones a retos en el proyecto OPPO Community con Angular además de configurar y 
-                    generar módulos personalizados para  Metalisterías Madrid con el  sistemas de gestión empresarial (ERP)  Odoo.
-                    Estoy abierto a aprender cualquier tipo de tecnología puesto que este sector me apasiona.
-                    Actualmente me sigo formando tanto en backend con java (Spring Boot) como en frontend (Angular) para tener una visión
-                    más amplia del sector.
+      description: `He invertido mi carrera profesional en el ámbito del desarrollo de software, especializándome en entornos 
+                    backend con Java Spring Boot, Node.js, bases de datos SQL y soluciones frontend con Angular. A lo largo de mi trayectoria, 
+                    he colaborado en proyectos tecnológicos para diferentes sectores, trabajando en estrecha coordinación con equipos de
+                    desarrollo, producto y negocio a nivel nacional.`,
+      observation: `Mi experiencia incluye el diseño, desarrollo e implementación de funcionalidades en sistemas de gestión 
+                    empresarial (ERP), plataformas web y soluciones a medida, adaptadas a las necesidades específicas de cada cliente. He
+                    participado en todas las fases del ciclo de vida del software, desde el análisis hasta la puesta en producción, aportando 
+                    soluciones eficientes y escalables..
                     `
     };
       return of(this.aboutModel);

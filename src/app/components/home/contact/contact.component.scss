@@ -1,147 +1,152 @@
-
-
-
 h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
-    font-family: 'Arial', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.social-networks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(217, 215, 215);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.social-networks ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-networks li {
+  display: inline-block;
+}
+
+.social-networks a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.social-networks img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-networks a:hover {
+  transform: scale(1.1);
+}
+
+.copy-button {
+  color: rgb(255, 255, 255);
+  background-color: #3092fb;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #007bff;
+}
+
+.rights {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+.rights p {
+  margin: 0;
+}
+
+/* Estilos para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem; /* Ajustar el tamaño del título */
   }
-  
+
   .social-networks {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgb(217, 215, 215);
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-    opacity: 0.9;
+    padding: 20px; /* Reducir el padding para pantallas pequeñas */
+    margin-bottom: 30px;
   }
-  
+
   .social-networks ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    gap: 20px;
-    justify-content: center;
+    gap: 15px; /* Reducir el espacio entre los iconos */
   }
-  
-  .social-networks li {
-    display: inline-block;
-  }
-  
+
   .social-networks a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-networks img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .social-networks a:hover {
-    transform: scale(1.1);
-  }
-  
-  .copy-button {
-    color: rgb(255, 255, 255);
-    background-color: #3092fb;
-    border: none;
-    border-radius: 10px;
-    width: 120px;
+    width: 40px; /* Reducir tamaño de los iconos */
     height: 40px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .copy-button:hover {
-    background-color:#007bff;
-  }
-  
-  .rights {
-    text-align: center;
-    font-size: 14px;
-    color: #555;
-    margin-top: 20px;
-    margin-bottom: 150px;
-  }
-  
-  .rights p {
-    margin: 0;
   }
 
-  
-  @media screen and (max-width: 768px) {
-    .social-networks ul {
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .social-networks a {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .copy-button {
-      width: 100px;
-      font-size: 12px;
-      padding: 10px;
-    }
-  }
-  
-
-
-  //formulario
-  .card {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  input[pInputText] {
-    width: 100%;
+  .copy-button {
+    width: 100px;
+    font-size: 12px;
     padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
+  }
+
+  .rights {
+    font-size: 12px; /* Reducir el tamaño del texto de derechos de autor */
+    margin-bottom: 100px;
+  }
+}
+
+/* Estilos para el componente de contacto en su estado normal (no minimizado) */
+.contact-wrapper {
+  position: sticky;
+  bottom: 1px;
+  width: 100%;
+  padding: 1rem;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.4s ease;
+  font-size: 1rem;
+  z-index: 10;
+}
+
+/* Estilos para el componente de contacto minimizado */
+.contact-wrapper.minimizado {
+  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.75rem;
+  color: gray;
+  height: 80px; /* Ajusta la altura cuando está minimizado */
+  padding: 0.5rem;
+}
+
+  
+  //efecto minimizar
+  .contact-wrapper {
+    height: 180px;
+    transition: all 0.4s ease;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.4);
+    transition: all 0.4s ease;
     font-size: 1rem;
+    z-index: 10;
   }
   
-  button[pButton] {
-    align-self: center;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-  }
   
-  button[pButton]:hover {
-    background-color: #0056b3;
-  }

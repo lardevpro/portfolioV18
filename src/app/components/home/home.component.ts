@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { AboutService } from './services/about.service';
 import { EducationService } from './services/education.service';
 import { ExperienceService } from './services/experience.service';
@@ -54,5 +54,21 @@ export class HomeComponent implements OnInit {
     this.projectsService.getProjects$().subscribe({next:p=> {this.projectsModel = p}});
     //SECTION Contact
     this.contactService.getContact$().subscribe({next:c=> {this.contactModel = c}});
+  }
+
+  minimizado = false;
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    const scrollPosition = window.scrollY;
+    const documentHeight = document.documentElement.scrollHeight;
+    const windowHeight = window.innerHeight;
+    const threshold = documentHeight - windowHeight - 100; // Umbral para detectar que está al final
+
+    if (scrollPosition >= threshold) {
+      this.minimizado = false;  // Maximiza cuando está al final
+    } else {
+      this.minimizado = true;  // Minimiza cuando no está al final
+    }
   }
 }
